@@ -1,0 +1,13 @@
+*% Roland MODELA EGX-30 x64 Driver ===============
+
+[def]
+NickName=EGX-30
+graphicfilter=RD550GE.DLL
+uilibrary=RD550UE.DLL
+;HelpFileJ=RD550JP.HLP
+;HelpFileE=RD550EN.HLP
+CHMHelpJP=RD550JP.CHM
+CHMHelpEN=RD550EN.CHM
+MaterialDataFile=egx30mat.dat
+
+[machine]

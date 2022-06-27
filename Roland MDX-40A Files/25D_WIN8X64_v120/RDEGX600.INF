@@ -1,0 +1,91 @@
+;
+;	Roland CAMM-2 DRIVER for Windows(R)
+;		Model: EGX-600
+;
+[Version]
+Signature="$Windows NT$"
+Class=Printer
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+Provider=%ROLAND%
+DriverVer=05/14/2013,1.2.0.0
+CatalogFile=RDG_25D.cat
+
+[Manufacturer]
+%ROLAND%=ROLAND,NTamd64
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; x64
+[ROLAND.NTamd64]
+"Roland EGX-600"=EGX600x64.RPD
+
+[ROLAND]
+;"Roland EGX-600"=EGX600x86.RPD
+
+
+[EGX600x64.RPD]
+CopyFiles=@EGX600x64.RPD,@EGX600MAT.DAT,RD25D_ALL64,RD25D_SYS64
+DataSection=RD25D_DATA64
+AddReg=RD25D.AddReg
+Ports=LPT
+ComPortSettings=9600,8,N,1,H
+
+[RD25D_DATA64]
+DriverFile=RD591GR.DLL
+ConfigFile=RD591UI.DLL
+HelpFile=%LOCALHLP%
+LanguageMonitor=%LANGMON%,RD591LM.DLL
+
+[RD25D_ALL64]
+RD591GR.DLL,RD25DGR64.DLL
+RD591GE.DLL,RD25DGE64.DLL
+RD591UI.DLL,RD25DUI64.DLL
+RD591UE.DLL,RD25DUE64.DLL
+RD591EN.CHM,RD25DEN.CHM
+RD591JP.CHM,RD25DJP.CHM
+RD591LM.DLL,rdlm64.dll
+RD591LF.DLL,rd25dlf64.dll
+
+[RD25D_SYS64]
+RD591LM.DLL,rdlm64.dll
+RD591LF.DLL,rd25dlf64.dll
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; x86
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[RD25D.AddReg]
+HKLM,"System\CurrentControlSet\Control\Print\Monitors\%LANGMON%","Filter",0,"RD591LF.DLL"
+
+[SourceDisksNames]
+1=%DISKNAME%,,
+
+[DestinationDirs]
+DefaultDestDir=66000
+RD25D_SYS64=66002
+
+[SourceDisksFiles]
+RD25DGR64.DLL=1
+RD25DGE64.DLL=1
+RD25DUI64.DLL=1
+RD25DUE64.DLL=1
+RD25DEN.CHM=1
+RD25DJP.CHM=1
+rdlm64.dll=1
+rd25dlf64.dll=1
+egx600mat.dat=1
+EGX600x64.rpd=1
+RDG_25D.cat=1
+
+[Strings]
+LOCALHLP="RD591EN.CHM"
+ROLAND="Roland"
+LANGMON="Roland EGX-600 Language Monitor"
+DISKNAME="Roland EGX-600 Driver"
+
+[Strings.0011]
+LOCALHLP="RD591JP.CHM"
+ROLAND="Roland"
+LANGMON="Roland EGX-600 Language Monitor"
+DISKNAME="Roland EGX-600 Driver"

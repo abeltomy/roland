@@ -1,0 +1,14 @@
+*% Roland MODELA MDX-5000R(G) x64 Driver ===============
+
+[def]
+NickName=MDX-5000R(G)
+graphicfilter=RD880GE.DLL
+uilibrary=RD880UE.DLL
+;HelpFileJ=RD880JP.HLP
+;HelpFileE=RD880EN.HLP
+CHMHelpJP=RD880JP.CHM
+CHMHelpEN=RD880EN.CHM
+MaterialDataFile=MDX5000RMAT.DAT
+
+
+[machine]

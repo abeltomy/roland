@@ -1,0 +1,14 @@
+*% Roland MODELA MDX-540 x64 Driver ===============
+
+[def]
+NickName=MDX-540
+graphicfilter=RD881GE.DLL
+uilibrary=RD881UE.DLL
+;HelpFileJ=RD881JP.HLP
+;HelpFileE=RD881EN.HLP
+CHMHelpJP=RD881JP.CHM
+CHMHelpEN=RD881EN.CHM
+MaterialDataFile=MDX540MAT.DAT
+
+
+[machine]

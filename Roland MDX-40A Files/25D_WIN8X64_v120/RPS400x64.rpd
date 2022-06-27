@@ -1,0 +1,13 @@
+*% Roland MODELA RPS-400 x64 Driver ===============
+
+[def]
+NickName=RPS-400
+graphicfilter=RD885GE.DLL
+uilibrary=RD885UE.DLL
+;HelpFileJ=RD885JP.HLP
+;HelpFileE=RD885EN.HLP
+CHMHelpJP=RD885JP.CHM
+CHMHelpEN=RD885EN.CHM
+MaterialDataFile=RPS400mat.dat
+
+[machine]

@@ -1,0 +1,13 @@
+*% Roland MODELA MDX-20 x64 Driver ===============
+
+[def]
+NickName=MDX-20
+graphicfilter=RD579GE.DLL
+uilibrary=RD579UE.DLL
+;HelpFileJ=RD579JP.HLP
+;HelpFileE=RD579EN.HLP
+CHMHelpJP=RD579JP.CHM
+CHMHelpEN=RD579EN.CHM
+MaterialDataFile=mdx20mat.dat
+
+[machine]

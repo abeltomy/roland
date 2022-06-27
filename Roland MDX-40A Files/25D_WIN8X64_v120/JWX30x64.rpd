@@ -1,0 +1,11 @@
+*% Roland MODELA JWX-30 x64 Driver ===============
+
+[def]
+NickName=JWX-30
+graphicfilter=RD855GE.DLL
+uilibrary=RD855UE.DLL
+CHMHelpJP=RD855JP.CHM
+CHMHelpEN=RD855EN.CHM
+MaterialDataFile=JWX30MAT.DAT
+
+[machine]

@@ -1,0 +1,11 @@
+*% Roland MODELA EGX-350 x64 Driver ===============
+
+[def]
+NickName=EGX-350
+graphicfilter=RD858GE.DLL
+uilibrary=RD858UE.DLL
+CHMHelpJP=RD858JP.CHM
+CHMHelpEN=RD858EN.CHM
+MaterialDataFile=egx350mat.dat
+
+[machine]

@@ -1,0 +1,11 @@
+*% Roland MODELA DWX-30 x64 Driver ===============
+
+[def]
+NickName=DWX-30
+graphicfilter=RD997GE.DLL
+uilibrary=RD997UE.DLL
+CHMHelpJP=RD997JP.CHM
+CHMHelpEN=RD997EN.CHM
+MaterialDataFile=DWX30MAT.DAT
+
+[machine]

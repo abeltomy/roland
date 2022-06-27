@@ -1,0 +1,11 @@
+*% Roland MODELA MDX-40A x64 Driver ===============
+
+[def]
+NickName=MDX-40A
+graphicfilter=RD987GE.DLL
+uilibrary=RD987UE.DLL
+CHMHelpJP=RD987JP.CHM
+CHMHelpEN=RD987EN.CHM
+MaterialDataFile=MDX40AMAT.DAT
+
+[machine]

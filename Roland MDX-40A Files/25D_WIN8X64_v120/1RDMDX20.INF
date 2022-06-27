@@ -1,0 +1,93 @@
+;
+;	Roland CAMM-2 DRIVER for Windows(R)
+;		Model: MDX-20
+;
+[Version]
+Signature="$Windows NT$"
+Class=Printer
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+Provider=%ROLAND%
+DriverVer=05/14/2013,1.2.0.0
+CatalogFile=RDG_25D.cat
+
+[Manufacturer]
+%ROLAND%=ROLAND,NTamd64
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; x64
+[ROLAND.NTamd64]
+"Roland MODELA MDX-20"=MDX20x64.RPD
+
+[ROLAND]
+;"Roland MODELA MDX-20"=MDX20x86.RPD
+
+
+[MDX20x64.RPD]
+CopyFiles=@MDX20x64.RPD,@MDX20MAT.DAT,RD25D_ALL64,RD25D_SYS64
+DataSection=RD25D_DATA64
+AddReg=RD25D.AddReg
+Ports=COM
+ComPortSettings=9600,8,N,1,H
+
+[RD25D_DATA64]
+DriverFile=RD579GR.DLL
+ConfigFile=RD579UI.DLL
+HelpFile=%LOCALHLP%
+LanguageMonitor=%LANGMON%,RD579LM.DLL
+
+[RD25D_ALL64]
+RD579GR.DLL,RD25DGR64.DLL
+RD579GE.DLL,RD25DGE64.DLL
+RD579UI.DLL,RD25DUI64.DLL
+RD579UE.DLL,RD25DUE64.DLL
+RD579EN.CHM,RD25DEN.CHM
+RD579JP.CHM,RD25DJP.CHM
+RD579LM.DLL,rdlm64.dll
+RD579LF.DLL,rd25dlf64.dll
+
+[RD25D_SYS64]
+RD579LM.DLL,rdlm64.dll
+RD579LF.DLL,rd25dlf64.dll
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; x86
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[RD25D.AddReg]
+HKLM,"System\CurrentControlSet\Control\Print\Monitors\%LANGMON%","Filter",0,"RD579LF.DLL"
+HKLM,"System\CurrentControlSet\Control\Print\Monitors\%LANGMON%","Tail",0,"3B"
+HKLM,"System\CurrentControlSet\Control\Print\Monitors\%LANGMON%","TailRepeat",0,"128"
+
+[SourceDisksNames]
+1=%DISKNAME%,,
+
+[DestinationDirs]
+DefaultDestDir=66000
+RD25D_SYS64=66002
+
+[SourceDisksFiles]
+RD25DGR64.DLL=1
+RD25DGE64.DLL=1
+RD25DUI64.DLL=1
+RD25DUE64.DLL=1
+RD25DEN.CHM=1
+RD25DJP.CHM=1
+rdlm64.dll=1
+rd25dlf64.dll=1
+mdx20mat.dat=1
+MDX20x64.rpd=1
+RDG_25D.cat=1
+
+[Strings]
+LOCALHLP="RD579EN.CHM"
+ROLAND="Roland"
+LANGMON="Roland MDX-20 Language Monitor"
+DISKNAME="Roland MDX-20 Driver"
+
+[Strings.0011]
+LOCALHLP="RD579JP.CHM"
+ROLAND="Roland"
+LANGMON="Roland MDX-20 Language Monitor"
+DISKNAME="Roland MDX-20 Driver"

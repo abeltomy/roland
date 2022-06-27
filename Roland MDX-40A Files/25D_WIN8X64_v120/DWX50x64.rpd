@@ -1,0 +1,11 @@
+*% Roland MODELA DWX-50 x64 Driver ===============
+
+[def]
+NickName=DWX-50
+graphicfilter=RD960GE.DLL
+uilibrary=RD960UE.DLL
+CHMHelpJP=RD960JP.CHM
+CHMHelpEN=RD960EN.CHM
+MaterialDataFile=DWX50MAT.DAT
+
+[machine]

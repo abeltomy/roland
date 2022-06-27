@@ -1,0 +1,13 @@
+*% Roland MODELA EGX-20 x64 Driver ===============
+
+[def]
+NickName=EGX-20
+graphicfilter=RD566GE.DLL
+uilibrary=RD566UE.DLL
+;HelpFileJ=RD566JP.HLP
+;HelpFileE=RD566EN.HLP
+CHMHelpJP=RD566JP.CHM
+CHMHelpEN=RD566EN.CHM
+MaterialDataFile=egx20mat.dat
+
+[machine]

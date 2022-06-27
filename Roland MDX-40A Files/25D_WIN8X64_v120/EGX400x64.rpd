@@ -1,0 +1,13 @@
+*% Roland MODELA EGX-400 x64 Driver ===============
+
+[def]
+NickName=EGX-400
+graphicfilter=RD590GE.DLL
+uilibrary=RD590UE.DLL
+;HelpFileJ=RD590JP.HLP
+;HelpFileE=RD590EN.HLP
+CHMHelpJP=RD590JP.CHM
+CHMHelpEN=RD590EN.CHM
+MaterialDataFile=egx400mat.dat
+
+[machine]

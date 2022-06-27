@@ -1,0 +1,13 @@
+*% Roland MODELA EGX-30A x64 Driver ===============
+
+[def]
+NickName=EGX-30A
+graphicfilter=RD848GE.DLL
+uilibrary=RD848UE.DLL
+;HelpFileJ=RD848JP.HLP
+;HelpFileE=RD848EN.HLP
+CHMHelpJP=RD848JP.CHM
+CHMHelpEN=RD848EN.CHM
+MaterialDataFile=egx30Amat.dat
+
+[machine]

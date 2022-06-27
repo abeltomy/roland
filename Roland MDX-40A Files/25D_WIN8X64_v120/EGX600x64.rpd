@@ -1,0 +1,13 @@
+*% Roland MODELA EGX-600 x64 Driver ===============
+
+[def]
+NickName=EGX-600
+graphicfilter=RD591GE.DLL
+uilibrary=RD591UE.DLL
+;HelpFileJ=RD591JP.HLP
+;HelpFileE=RD591EN.HLP
+CHMHelpJP=RD591JP.CHM
+CHMHelpEN=RD591EN.CHM
+MaterialDataFile=egx600mat.dat
+
+[machine]

@@ -1,0 +1,12 @@
+*% Roland MODELA EGX-360 x64 Driver ===============
+
+[def]
+NickName=EGX-360
+graphicfilter=RD865GE.DLL
+uilibrary=RD865UE.DLL
+CHMHelpJP=RD865JP.CHM
+CHMHelpEN=RD865EN.CHM
+MaterialDataFile=egx360mat.dat
+StatusMonitorEx=RD865SL.DLL
+
+[machine]

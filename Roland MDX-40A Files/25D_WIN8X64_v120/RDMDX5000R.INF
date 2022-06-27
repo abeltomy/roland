@@ -1,0 +1,90 @@
+;
+;	Roland CAMM-2 DRIVER for Windows(R)
+;		Model: MDX-5000R
+;
+[Version]
+Signature="$Windows NT$"
+Class=Printer
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+Provider=%ROLAND%
+DriverVer=05/14/2013,1.2.0.0
+CatalogFile=RDG_25D.cat
+
+[Manufacturer]
+%ROLAND%=ROLAND,NTamd64
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; x64
+[ROLAND.NTamd64]
+"Roland MDX-5000R"=MDX5000Rx64.RPD
+
+[ROLAND]
+;"Roland MDX-5000R"=MDX5000Rx86.RPD
+
+
+[MDX5000Rx64.RPD]
+CopyFiles=@MDX5000Rx64.RPD,@MDX5000RMAT.DAT,RD25D_ALL64,RD25D_SYS64
+DataSection=RD25D_DATA64
+AddReg=RD25D.AddReg
+Ports=FILE
+
+[RD25D_DATA64]
+DriverFile=RD880GR.DLL
+ConfigFile=RD880UI.DLL
+HelpFile=%LOCALHLP%
+LanguageMonitor=%LANGMON%,RD880LM.DLL
+
+[RD25D_ALL64]
+RD880GR.DLL,RD25DGR64.DLL
+RD880GE.DLL,RD25DGE64.DLL
+RD880UI.DLL,RD25DUI64.DLL
+RD880UE.DLL,RD25DUE64.DLL
+RD880EN.CHM,RD25DEN.CHM
+RD880JP.CHM,RD25DJP.CHM
+RD880LM.DLL,rdlm64.dll
+RD880LF.DLL,rd25dlf64.dll
+
+[RD25D_SYS64]
+RD880LM.DLL,rdlm64.dll
+RD880LF.DLL,rd25dlf64.dll
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; x86
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[RD25D.AddReg]
+HKLM,"System\CurrentControlSet\Control\Print\Monitors\%LANGMON%","Filter",0,"RD880LF.DLL"
+
+[SourceDisksNames]
+1=%DISKNAME%,,
+
+[DestinationDirs]
+DefaultDestDir=66000
+RD25D_SYS64=66002
+
+[SourceDisksFiles]
+RD25DGR64.DLL=1
+RD25DGE64.DLL=1
+RD25DUI64.DLL=1
+RD25DUE64.DLL=1
+RD25DEN.CHM=1
+RD25DJP.CHM=1
+rdlm64.dll=1
+rd25dlf64.dll=1
+mdx5000Rmat.dat=1
+MDX5000Rx64.rpd=1
+RDG_25D.cat=1
+
+[Strings]
+LOCALHLP="RD880EN.CHM"
+ROLAND="Roland"
+LANGMON="Roland MDX-5000R Language Monitor"
+DISKNAME="Roland MDX-5000R Driver"
+
+[Strings.0011]
+LOCALHLP="RD880JP.CHM"
+ROLAND="Roland"
+LANGMON="Roland MDX-5000R Language Monitor"
+DISKNAME="Roland MDX-5000R Driver"

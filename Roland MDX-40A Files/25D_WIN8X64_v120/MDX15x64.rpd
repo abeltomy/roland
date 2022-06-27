@@ -1,0 +1,13 @@
+*% Roland MODELA MDX-15 x64 Driver ===============
+
+[def]
+NickName=MDX-15
+graphicfilter=RD559GE.DLL
+uilibrary=RD559UE.DLL
+;HelpFileJ=RD559JP.HLP
+;HelpFileE=RD559EN.HLP
+CHMHelpJP=RD559JP.CHM
+CHMHelpEN=RD559EN.CHM
+MaterialDataFile=mdx15mat.dat
+
+[machine]

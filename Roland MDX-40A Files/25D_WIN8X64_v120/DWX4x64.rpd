@@ -1,0 +1,11 @@
+*% Roland DWX-4 x64 Driver ===============
+
+[def]
+NickName=DWX-4
+graphicfilter=RD961GE.DLL
+uilibrary=RD961UE.DLL
+CHMHelpJP=RD961JP.CHM
+CHMHelpEN=RD961EN.CHM
+MaterialDataFile=DWX4mat.dat
+
+[machine]

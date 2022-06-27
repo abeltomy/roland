@@ -1,0 +1,14 @@
+*% Roland MODELA JWX-10 x64 Driver ===============
+
+[def]
+NickName=JWX-10
+graphicfilter=RD569GE.DLL
+uilibrary=RD569UE.DLL
+;HelpFileJ=RD569JP.HLP
+;HelpFileE=RD569EN.HLP
+CHMHelpJP=RD569JP.CHM
+CHMHelpEN=RD569EN.CHM
+MaterialDataFile=JWX10MAT.DAT
+StatusMonitorEx=RD569SM.DLL
+
+[machine]

@@ -1,0 +1,14 @@
+*% Roland MODELA MDX-40 x64 Driver ===============
+
+[def]
+NickName=MDX-40
+graphicfilter=RD544GE.DLL
+uilibrary=RD544UE.DLL
+;HelpFileJ=RD544JP.HLP
+;HelpFileE=RD544EN.HLP
+CHMHelpJP=RD544JP.CHM
+CHMHelpEN=RD544EN.CHM
+MaterialDataFile=MDX40MAT.DAT
+StatusMonitorEx=RD544SM.DLL
+
+[machine]

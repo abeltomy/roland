@@ -1,0 +1,90 @@
+;
+;	Roland CAMM-2 DRIVER for Windows(R)
+;		Model: EGX-20
+;
+[Version]
+Signature="$Windows NT$"
+Class=Printer
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+Provider=%ROLAND%
+DriverVer=05/14/2013,1.2.0.0
+CatalogFile=RDG_25D.cat
+
+[Manufacturer]
+%ROLAND%=ROLAND,NTamd64
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; x64
+[ROLAND.NTamd64]
+"Roland EGX-20"=EGX20x64.RPD,RolandEGX-205C1E
+
+[ROLAND]
+;"Roland EGX-20"=EGX20x86.RPD,RolandEGX-205C1E
+
+
+[EGX20x64.RPD]
+CopyFiles=@EGX20x64.RPD,@EGX20MAT.DAT,RD25D_ALL64,RD25D_SYS64
+DataSection=RD25D_DATA64
+AddReg=RD25D.AddReg
+Ports=LPT
+
+[RD25D_DATA64]
+DriverFile=RD566GR.DLL
+ConfigFile=RD566UI.DLL
+HelpFile=%LOCALHLP%
+LanguageMonitor=%LANGMON%,RD566LM.DLL
+
+[RD25D_ALL64]
+RD566GR.DLL,RD25DGR64.DLL
+RD566GE.DLL,RD25DGE64.DLL
+RD566UI.DLL,RD25DUI64.DLL
+RD566UE.DLL,RD25DUE64.DLL
+RD566EN.CHM,RD25DEN.CHM
+RD566JP.CHM,RD25DJP.CHM
+RD566LM.DLL,rdlm64.dll
+RD566LF.DLL,rd25dlf64.dll
+
+[RD25D_SYS64]
+RD566LM.DLL,rdlm64.dll
+RD566LF.DLL,rd25dlf64.dll
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; x86
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[RD25D.AddReg]
+HKLM,"System\CurrentControlSet\Control\Print\Monitors\%LANGMON%","Filter",0,"RD566LF.DLL"
+
+[SourceDisksNames]
+1=%DISKNAME%,,
+
+[DestinationDirs]
+DefaultDestDir=66000
+RD25D_SYS64=66002
+
+[SourceDisksFiles]
+RD25DGR64.DLL=1
+RD25DGE64.DLL=1
+RD25DUI64.DLL=1
+RD25DUE64.DLL=1
+RD25DEN.CHM=1
+RD25DJP.CHM=1
+rdlm64.dll=1
+rd25dlf64.dll=1
+egx20mat.dat=1
+EGX20x64.rpd=1
+RDG_25D.cat=1
+
+[Strings]
+LOCALHLP="RD566EN.CHM"
+ROLAND="Roland"
+LANGMON="Roland EGX-20 Language Monitor"
+DISKNAME="Roland EGX-20 Driver"
+
+[Strings.0011]
+LOCALHLP="RD566JP.CHM"
+ROLAND="Roland"
+LANGMON="Roland EGX-20 Language Monitor"
+DISKNAME="Roland EGX-20 Driver"
